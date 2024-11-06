@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- //containerNavbar  -->
+    <div class="containerNavbar">
+       <div class="logo">
+            <span>BE</span>Movies
+
+        </div>
+
+
+        <ul class="navItems">
+
+
+            <li><a href="/">search</a></li>
+            <li><a href="/">latest</a></li>
+            <li><a href="/">genres</a></li>
+            <li><a href="/">register</a></li>
+            <li><a href="/">signin</a></li>
+
+        </ul>
+    </div>
+<!-- //SEARCHBOX -->
+
+    <div class="inputContainer">
+        <input id="input" type="text" id="myInput">
+        <button class="search" onclick="search()">Search</button>
+
+    </div>
+
+
+
+
+    <!-- Swiper -->
+    <div class="swiper-Container">
+
+        <div class="swiper mySwiper">
+            <div>
+                <p>Resultat for Godfather</p>
+            </div>
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide"><a href="/"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/10db88bea03473655dc859b1f8724fe2.jpeg"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/8d5642599f021395c32ae8613373bc66.jpeg"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
+                            alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
+                            alt=""></a></div>
+            </div>
+
+            <div class="swiper-pagination">
+
+
+            </div>
+        </div>
+        <div class="swiper1-button-next"></div>
+        <div class="swiper1-button-prev"></div>
+
+    </div>
+
+    <div class="swiper-Container">
+
+        <div class="swiper mySwiper">
+            <div>
+                <p>Latest releases</p>
+            </div>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><a href="/"><img src="images/equalizer.jpeg" alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/2.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/barbi.jpeg" alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/mission.jpeg" alt=""></a></div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+
+            <div class="swiper-pagination">
+
+
+            </div>
+        </div>
+        <div class="swiper1-button-next"></div>
+        <div class="swiper1-button-prev"></div>
+
+    </div>
+
+
+
+
+
+
+    <div class="swiper-Container">
+        <div>
+            <h2>Movies By Genres</h2>
+        </div>
+<!-- 
+        //DROPDOWNS -->
+        <div class="drop-container">
+            <div class="dropdown">
+                <button onclick="myFunction(2)" class="dropbtn">Comedy</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="#">name1</a>
+                    <a href="#">name2</a>
+                    <a href="#">name3</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="myFunction(3)" class="dropbtn">Drama</button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#">name1</a>
+                    <a href="#">name2</a>
+                    <a href="#">name3</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="myFunction(4)" class="dropbtn">Action</button>
+                <div id="myDropdown4" class="dropdown-content">
+                    <a href="#">name1</a>
+                    <a href="#">name2</a>
+                    <a href="#">name3</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="myFunction(5)" class="dropbtn">Romance</button>
+                <div id="myDropdown5" class="dropdown-content">
+                    <a href="#">name1</a>
+                    <a href="#">name2</a>
+                    <a href="#">name3</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="myFunction(6)" class="dropbtn">Fantasy</button>
+                <div id="myDropdown6" class="dropdown-content">
+                    <a href="#">name1</a>
+                    <a href="#">name2</a>
+                    <a href="#">name3</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="myFunction(7)" class="dropbtn">Animation</button>
+                <div id="myDropdown7" class="dropdown-content">
+                    <a href="#">name1</a>
+                    <a href="#">name2</a>
+                    <a href="#">name3</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="/"><img src="images/noHard.jpeg" alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/poison.jpeg" alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/haunted.jpeg" alt=""></a></div>
+                <div class="swiper-slide"><a href="/"><img src="images/barbi.jpeg" alt=""></a>4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+
+            <div class="swiper-pagination">
+
+
+            </div>
+        </div>
+        <div class="swiper1-button-next"></div>
+        <div class="swiper1-button-prev"></div>
+
+    </div>
+<!-- //FOOTER NAVBAR -->
+    <div class="containerNavbar">
+        <div class="logo">
+            <span>BE</span>Movies
+        </div>
+        <ul class="navItems">
+            <li><a href="/">search</a></li>
+            <li><a href="/">latest</a></li>
+            <li><a href="/">genres</a></li>
+            <li><a href="/">register</a></li>
+            <li><a href="/">signin</a></li>
+        </ul>
+        <a href="/">@2023 - All rights reserved</a>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- <script src="script.js"></script> -->
+<script>
+
+
+    //SWIFER
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 35,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+nextEl: ".swiper1-button-next",
+prevEl: ".swiper1-button-prev",
+},
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+});
+
+
+//Dropdown Menu
+
+
+function myFunction(dropdownNumber) {
+ 
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].classList.remove("show");
+    }
+    
+
+    var dropdown = document.getElementById("myDropdown" + dropdownNumber);
+    dropdown.classList.toggle("show");
+  }
+  
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+</body>
+
+</html>

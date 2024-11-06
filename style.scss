@@ -1,0 +1,218 @@
+body {
+  background-color: #191b20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  color: #ffffff;
+}
+//NAVBAR ELEMENTS
+.containerNavbar {
+  width: 1440px;
+  height: 100px;
+  background-color: #040405;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+
+  .logo {
+    font-family: Inria Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.16px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  span {
+    font-family: Inria Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.16px;
+    text-align: left;
+    color: rgb(235, 23, 23);
+  }
+  ul {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+
+  a {
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+//SEARCHBOX
+input {
+  margin: 0 auto;
+  display: flex;
+  justify-self: center;
+  width: 272px;
+  height: 44px;
+  top: 173px;
+  left: 584px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+
+  background-image: url("arrow.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 30px;
+
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  //   border: 1px solid #8e2121;
+  margin-bottom: 12px;
+}
+
+p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+}
+h2 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: center;
+}
+//SWIPER CONTAINER
+.swiper-Container {
+  margin: 0 auto;
+  width: 1280px;
+  //   border: 3px solid red;
+  position: relative;
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+}
+.swiper {
+  max-width: 1075px;
+  height: 380px;
+  margin: 0 auto;
+  padding: 50px;
+  //   border: 3px solid red;
+  margin: 40px;
+}
+
+.swiper-slide {
+  width: 234px;
+  height: 351px;
+  // padding: 6px;
+  margin: 5px;
+  text-align: center;
+  font-size: 18px;
+  background: #494343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 234px;
+  height: 351px;
+  display: block;
+  object-fit: cover;
+}
+
+.swiper1-button-next {
+  background-image: url("vector2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 14px;
+  right: 0;
+  top: 40%;
+  position: absolute;
+  z-index: 1000;
+  margin: 12px;
+}
+.swiper1-button-prev {
+  position: absolute;
+  background-image: url("vector1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 40%;
+  z-index: 1000;
+  margin: 12px;
+  width: 18px;
+  height: 14px;
+}
+
+//DropDown MENU
+.dropbtn {
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #a10101;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5b5757;
+  min-width: 100px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 1000;
+}
+
+//   .dropdown a:hover {background-color: #ddd;}
+
+.show {
+  display: block;
+}
+
+.drop-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  // background-color: #890d1d;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: center;
+}
