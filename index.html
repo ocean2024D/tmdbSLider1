@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Swiper demo</title>
+    <title>Swiper original</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -15,111 +15,100 @@
     <!-- //containerNavbar  -->
     <div class="containerNavbar">
         <div class="logo">
-            <span>BE</span>Movies
-
+            <span>BE</span>MOVIES
         </div>
-
-
         <ul class="navItems">
-
-
             <li><a href="#">search</a></li>
             <li><a href="#">latest</a></li>
             <li><a href="#">genres</a></li>
-            <li><button id="myBtn" class="register-Signin">register</button></li>
-            <li><button id="myBtn" class="register-Signin">signin</button></li>
-
+            <li><button id="registerBtn" class="register-Signin">register</button></li>
+            <li><button id="signinBtn" class="register-Signin">signin</button></li>
         </ul>
     </div>
     <!-- //SEARCHBOX -->
-
-    <!-- <div class="inputContainer">
+    <div class="inputContainer">
         <input id="input" type="text" id="myInput">
         <button class="search" onclick="search()">Search</button>
-
-    </div> -->
-
-
-
+    </div>
 
     <!-- Swiper -->
     <div class="swiper-Container">
-
-        <div class="swiper mySwiper1">
+        <div class="swiper mySwiper1 ">
             <div>
                 <p>Resultat for Godfather</p>
             </div>
             <div class="swiper-wrapper">
-
-
-                <div class="swiper-slide"><a href="#"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
-                            alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/theGodFather.jpeg" alt="aa"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/godFather.jpeg" alt="aa"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
-                            alt=""></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
-                            alt="aa"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
-                            alt="aa"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
-                            alt="aa"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
-                            alt="aa"></a></div>
-                <div class="swiper-slide"><a href="#"><img src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg"
-                            alt="aa"></a></div>
+                <div class="swiper-slide">
+                    <!-- all of this info should come from javascript  from api  I used class names for styles-->
+                    <div class="info-container"> <a id="modal2-Btn"><img src="images/barbi.jpeg" alt=""></a>
+                        <div class="info">
+                            <h1 id="title" class="title">The Godfather part III</h1>
+                            <h2 id="date" class="date">1990</h2>
+                            <h3 id="genres" class="genres">Crime / Drama / Thriller</h3>
+                            <h4 id="star" class="info-star"><img src="images/star.png" alt=""></h4><span id="point"
+                                class="info-point">7.4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="info-container"> <a id="modal2-Btn"><img src="images/theGodFather.jpeg" alt=""></a>
+                        <div class="info">
+                            <h1 id="title" class="title">The Godfather part III</h1>
+                            <h2 id="date" class="date">1990</h2>
+                            <h3 id="genres" class="genres">Crime / Drama / Thriller</h3>
+                            <h4 id="star" class="info-star"><img src="images/star.png" alt=""></h4><span id="point"
+                                class="info-point">7.4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="info-container"> <a href="#"><img src="images/theGodFather.jpeg" alt=""></a>
+                        <div class="info">
+                       </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><a href="#" id="modal2-Btn"><img src="images/mission.jpeg" alt=""></a></div>
+                <div class="swiper-slide">Slide 5</div>
             </div>
-
             <div class="swiper-pagination1">
-
-
             </div>
         </div>
         <div class="swiper1-button-next"></div>
         <div class="swiper1-button-prev"></div>
-
     </div>
-
     <div class="swiper-Container">
-
         <div class="swiper mySwiper2">
             <div>
                 <p>Latest releases</p>
             </div>
             <div class="swiper-wrapper">
-
-                <div class="swiper-slide"><a href="#"><img src="images/equalizer.jpeg" alt=""></a></div>
+                <div class="swiper-slide">
+                    <div class="info-container"> <a href="#"><img src="images/barbi.jpeg" alt=""></a>
+                        <div class="info">
+                            <h1 class="title">The Godfather part III</h1>
+                            <h2 class="date">1990</h2>
+                            <h3 class="genres">Crime / Drama / Thriller</h3>
+                            <h4 class="info-star"><img src="images/star.png" alt=""></h4><span
+                                class="info-point">7.4</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="swiper-slide"><a href="#"><img src="images/2.jpg" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="images/barbi.jpeg" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="images/mission.jpeg" alt=""></a></div>
                 <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
             </div>
-
             <div class="swiper-pagination2">
-
-
             </div>
         </div>
         <div class="swiper2-button-next"></div>
         <div class="swiper2-button-prev"></div>
-
     </div>
-
-
-
-
-
-
     <div class="swiper-Container">
         <div>
             <h2>Movies By Genres</h2>
         </div>
-
-        <!-- //DROPDOWNS -->
+        <!-- //DROPDOWNS  navbar list menu I have to fix a small problem here-->
         <div class="drop-container">
             <div class="dropdown">
                 <button onclick="myFunction(2)" class="dropbtn">Comedy</button>
@@ -179,7 +168,18 @@
 
         <div class="swiper mySwiper3">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><a href="#"><img src="images/noHard.jpeg" alt=""></a></div>
+                <div class="swiper-slide">
+                    <!-- all of this info should come from javascript  from api  I used class names for styles-->
+                    <div class="info-container"> <a href="#"><img src="images/barbi.jpeg" alt=""></a>
+                        <div class="info">
+                            <h1 id="title" class="title">The Godfather part III</h1>
+                            <h2 id="date" class="date">1990</h2>
+                            <h3 id="genres" class="genres">Crime / Drama / Thriller</h3>
+                            <h4 id="star" class="info-star"><img src="images/star.png" alt=""></h4><span id="point"
+                                class="info-point">7.4</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="swiper-slide"><a href="#"><img src="images/poison.jpeg" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="images/haunted.jpeg" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="images/barbi.jpeg" alt=""></a></div>
@@ -187,6 +187,8 @@
                 <div class="swiper-slide"><a href="#"><img src="images/haunted.jpeg" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="images/barbi.jpeg" alt=""></a></div>
             </div>
+
+            <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
             <div class="swiper-pagination3">
 
 
@@ -196,6 +198,8 @@
         <div class="swiper3-button-prev"></div>
 
     </div>
+
+
     <!-- //FOOTER NAVBAR -->
     <div class="containerNavbar">
         <div class="logo">
@@ -205,8 +209,8 @@
             <li><a href="#">search</a></li>
             <li><a href="#">latest</a></li>
             <li><a href="#">genres</a></li>
-            <li><button id="myBtn" class="register-Signin">register</button></li>
-            <li><button id="myBtn" class="register-Signin">signin</button></li>
+            <li><button id="registerBtn" class="register-Signin">register</button></li>
+            <li><button id="signinBtn" class="register-Signin">signin</button></li>
         </ul>
         <a href="/">@2023 - All rights reserved</a>
     </div>
@@ -215,8 +219,7 @@
 
 
 
-    <!-- 
-//POPUP register -->
+    <!-- //POPUP register -->
 
     <div id="myModal" class="modal">
 
@@ -227,127 +230,66 @@
             <button>LOGIN</button>
             <div>
                 <input type="text" name="Username" placeholder="Username">
-
                 <input type="password" name="Password" placeholder="Username">
-
-
                 <form action="/" method="post">
-
-
                     <div class="container">
                         <label for="uname"><b>Username</b></label>
                         <input type="text" placeholder="Enter Username" name="uname" required>
-
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
-
                         <button type="submit">Login</button>
                         <label>
                             <input type="checkbox" checked="checked" name="remember"> Remember me
                         </label>
                     </div>
-
-
                 </form>
-
             </div>
-
         </div>
 
 
 
-<!-- 
-        <script src="script.js"></script> -->
-        <script>
+        <!-- //popup movie -->
+        <button id="modal2-Btn">Open Modal</button>
+        <div id="Modal2" class="modal2">
+            <!-- Modal content -->
+            <div class="modal2-content">
+                <div> <span class="close2">&times;</span></div>
+
+                <!-- all of this info should come from javascript  from api   I used class names for styles-->
+                <div> <img class="imageOfFilm" src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg" alt="">
+                </div>
+                <div class="detail">
+                    <h1 class="title"> The Godfather</h1>
+                    <p class="date">1972</p>
+                    <img class="star" src="star.png" alt="">
+                    <span class="point">8.7</span>
+                    <h2 class="genres">Crime / Drama</h2>
+                    <p class="overview">Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American
+                        Corleone
+                        crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on
+                        his
+                        life, his youngest son, Michael steps in to take care of the would-be killers, launching a
+                        campaign
+                        of
+                        bloody revenge.
+                    </p>
+                    <h2 class="cast">CAST:</h2>
+                    <p class="Actors">Marlon Brando, Al Pacino, James Caan,
+                        Robert Duvall</p>
+                    <br><br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    // POP-UP-MOVIE
 
 
-            //SWIPER
-
-            var swiper = new Swiper(".mySwiper1", {
-                slidesPerView: 4,
-                spaceBetween: 35,
-                freeMode: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper1-button-next",
-                    prevEl: ".swiper1-button-prev",
-                },
-                pagination: {
-                    el: ".swiper1-pagination",
-                    clickable: true,
-                },
-            });
-
-            var swiper = new Swiper(".mySwiper2", {
-                slidesPerView: 4,
-                spaceBetween: 35,
-                freeMode: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper2-button-next",
-                    prevEl: ".swiper2-button-prev",
-                },
-                pagination: {
-                    el: ".swiper2-pagination2",
-                    clickable: true,
-                },
-            });
 
 
-            var swiper = new Swiper(".mySwiper3", {
-                slidesPerView: 4,
-                spaceBetween: 35,
-                freeMode: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper3-button-next",
-                    prevEl: ".swiper3-button-prev",
-                },
-                pagination: {
-                    el: ".swiper3-pagination3",
-                    clickable: true,
-                },
-            });
+    <script src="script2.js"></script>
 
-
-            //Dropdown Menu
-
-
-            function myFunction(dropdownNumber) {
-
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    dropdowns[i].classList.remove("show");
-                }
-
-
-                var dropdown = document.getElementById("myDropdown" + dropdownNumber);
-                dropdown.classList.toggle("show");
-            }
-
-
-            window.onclick = function (event) {
-                if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-            } 
-        </script>
 
 </body>
 
