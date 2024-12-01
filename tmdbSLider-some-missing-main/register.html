@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+</head>
+<body><style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* The Modal (background) */
+    .Register-modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Register-Modal Content */
+    .Register-modal-content {
+      background-color: #8a4646;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    
+    /* The Close Button */
+    .Register-close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .Register-close:hover,
+    .Register-close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+
+    <h2>Modal Example</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="Register-myBtn">Open Modal</button>
+    
+    <!-- The Modal -->
+    <div id="Register-myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="Register-modal-content">
+        <span class="Register-close">&times;</span>
+        <h2>Kayıt Ol</h2>
+
+    <!-- Kayıt Formu -->
+    <form id="registerForm" onsubmit="return saveData(event)">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Parola:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirmPassword">Parolayı Onayla:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <button type="submit">Kayıt Ol</button>
+    </form>
+      </div>
+    
+    </div>
+    
+    <script>
+    // Get the modal
+    var RegisterModal = document.getElementById("Register-myModal");
+    
+    // Get the button that opens the modal
+    var RegisterBtn = document.getElementById("Register-myBtn");
+    
+    // Get the <span> element that closes the modal
+    var RegisterSpan = document.getElementsByClassName("Register-close")[0];
+    
+    // When the user clicks the button, open the modal 
+    RegisterBtn.onclick = function() {
+      RegisterModal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    RegisterSpan.onclick = function() {
+      RegisterModal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+  if (event.target == RegisterModal) {
+    RegisterModal.style.display = "none";
+  }
+}
+
+
+
+ 
+
+    <script>
+        // Formu kaydetme fonksiyonu
+        function saveData(event) {
+            event.preventDefault();  // Formun sayfayı yeniden yüklemesini engeller
+
+            // Formdaki alanlardan veri alma
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Parolaların eşleşip eşleşmediğini kontrol et
+            if (password !== confirmPassword) {
+                alert("Parolalar uyuşmuyor!");
+                return false;
+            }
+
+            // Kullanıcı verilerini objeye kaydetme
+            const userData = {
+                username: username,
+                email: email,
+                password: password
+            };
+
+            // LocalStorage'a veriyi kaydetme
+            localStorage.setItem('userData', JSON.stringify(userData));
+
+            // Başarı mesajı
+            alert("Kayıt başarıyla tamamlandı!");
+
+            // Formu sıfırlama
+            document.getElementById('registerForm').reset();
+            return true;
+        }
+    </script>
+
+</body>
+</html>

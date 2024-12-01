@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+</head>
+<body>
+
+    <h2>Giriş Yap</h2>
+
+    <!-- Giriş Formu -->
+    <form id="loginForm" onsubmit="return loginData(event)">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="loginUsername" name="username" required><br><br>
+
+        <label for="password">Parola:</label>
+        <input type="password" id="loginPassword" name="password" required><br><br>
+
+        <button type="submit">Giriş Yap</button>
+    </form>
+
+    <script>
+      
+        function loginData(event) {
+            event.preventDefault(); 
+
+   
+            const loginUsername = document.getElementById('loginUsername').value;
+            const loginPassword = document.getElementById('loginPassword').value;
+
+          
+            const storedUserData = JSON.parse(localStorage.getItem('userData'));
+
+            
+            if (storedUserData) {
+                if (loginUsername === storedUserData.username && loginPassword === storedUserData.password) {
+                    alert("Başarıyla giriş yaptınız!");
+                } else {
+                    alert("Kullanıcı adı veya parola yanlış!");
+                }
+            } else {
+                alert("Kayıtlı kullanıcı bulunamadı. Lütfen kayıt olun.");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+/// //IMAGE HOVER EFFECT AND INFO
+
+.info-container {
+    position: relative;
+    width: 234px;
+    height: 351px;
+    overflow: hidden;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.584);
+    color: #f3f1f1;
+  
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+  
+  .info-container:hover .info {
+    opacity: 1;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .info-container:hover .modal2 {
+    display: block;
+  }
+  
+  img .star {
+    width: 26px;
+    height: 26px;
+  }
