@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>slider</title>
+</head>
+
+<body>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+    <!-- //popup movie -->
+    <!-- <button id="modal2-Btn">Open Modal</button> -->
+    <div id="Modal2" class="modal2">
+        <!-- Modal content -->
+        <div class="modal2-content">
+            <div> <span class="close2">&times;</span></div>
+
+            <!-- all of this info should come from javascript  from api   I used class names for styles-->
+            <div> <img class="imageOfFilm" src="images/3a9723ae5397841adf7fbaed84bd30b2.jpeg" alt="">
+            </div>
+            <div class="detail">
+                <div>
+                    <h1 class="title"> The Godfather</h1>
+                    <p class="date">1972</p>
+                </div>
+                <div>
+                    <img class="star" src="images/star.png" alt="">
+                    <span class="point">8.7</span>
+                </div>
+                <h2 class="genres"></h2>
+                <p class="overview">Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American
+                    Corleone
+                    crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on
+                    his
+                    life, his youngest son, Michael steps in to take care of the would-be killers, launching a
+                    campaign
+                    of
+                    bloody revenge.
+                </p>
+                <h2 class="cast">CAST:</h2>
+                <p class="Actors">Marlon Brando, Al Pacino, James Caan,
+                    Robert Duvall</p>
+                <br><br>
+
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+    <div class="overlay hidden"></div>
+    <header>
+        <div class="navbar">
+            <div class="logoSite">
+                <p src="" alt="" class="logo"><span>be</span>movies</p>
+            </div>
+            <ul class="nav">
+                <li><a href="#search">Search</a></li>
+                <li><a href="#slider2">Latest</a></li>
+                <li><a href="#slider3">Genres</a></li>
+                <li id="registerBtn">Register</li>
+                <li id="signinBtn">Signin</li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="searchBar">
+            <form id="searchForm" role="search">
+                <label class="label-hidden" for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Search..." autofocus required />
+                <button class="button" type="button" id="searchButton">Go</button>
+            </form>
+        </div>
+        <div class="sliderResult">
+            <h3 class="result">Result for ''</h3>
+            <div class="splideContainer">
+                <div id="slider1" class="splide" aria-label="Movie Slider">
+                    <div class="splide__track">
+                        <div class="cards splide__list">
+                            <div class="card splide__slide">
+                                <div class="info-container">
+
+                                    <img class="image" src=asset/ai-generated-8520107_1280.jpg
+                                        alt="The Godfather part III movie poster">
+                                    <div class="info">
+                                        <h1 class="title">Naruto</h1>
+                                        <h2 class="date">1993</h2>
+                                        <h3 class="genres">seinen</h3>
+                                        <h4>
+                                            <img src="star.png" alt="Star rating">
+                                        </h4>
+                                        <span class="info-point">4.6</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card splide__slide">
+                                <img class="image" src="asset/ninja-7701126_1280.jpg" alt="Movie poster 2">
+
+                            </div>
+                            <div class="card splide__slide">
+                                <img class="image" src="asset/sunset-7628289_1280.jpg" alt="Movie poster 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="sliderLatest">
+            <h3>latest releases</h3>
+            <div id="slider2" class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <div class="cards splide__list  ">
+                        <div class="card splide__slide ">
+                            <div class="info-container">
+
+                                <img class="image" src="asset/ai-generated-8520107_1280.jpg"
+                                    alt="The Godfather part III movie poster">
+                                <div class="info">
+                                    <h1 class="title">The Godfather part III</h1>
+                                    <h2 class="date">1990</h2>
+                                    <h3 class="genres">Crime / Drama / Thriller</h3>
+                                    <!-- <h4 class="info-star">
+                                    <img src="star.png" alt="Star rating">
+                                </h4> -->
+                                    <span class="info-point">7.4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card splide__slide">
+                            <img class="image" src="asset/ninja-7701126_1280.jpg" alt="Movie poster 2">
+
+                        </div>
+                        <div class="card splide__slide">
+                            <img class="image" src="pexels-photo-931018.jpeg" alt="Movie poster 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sliderGenre">
+        <h3>Movies by genre</h3>
+        <ul class="movieNav">
+            <li class="comedy">Comedy</li>
+            <li>Drama</li>
+            <li>Action</li>
+            <li>Fantasy</li>
+            <li>Animation</li>
+        </ul>
+        <hr>
+
+        <div id="slider3" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <div class="cards splide__list  ">
+                    <div class="card splide__slide ">
+                        <div class="info-container">
+
+                            <img class="image" src="asset/ninja-7701126_1280.jpg"
+                                alt="The Godfather part III movie poster">
+                            <div class="info">
+                                <h1 class="title">The Godfather part III</h1>
+                                <h2 class="date">1990</h2>
+                                <h3 class="genres">Crime / Drama / Thriller</h3>
+                                <!-- <h4 class="info-star">
+                                        <img src="star.png" alt="Star rating">
+                                    </h4> -->
+                                <span class="info-point">7.4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card splide__slide ">
+                        <img class="image" src="asset/ai-generated-8520107_1280.jpg" alt="">
+                    </div>
+                    <div class="card splide__slide ">
+                        <img class="image" src="asset/sunset-7628289_1280.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <div class="navbarBottom">
+            <div class="logoSiteFooter">
+                <p src="" alt="" class="logo"><span>be</span>movies</p>
+            </div>
+            <ul class="nav">
+                <li><a href="#search">Search</a></li>
+                <li><a href="#slider2">Latest</a></li>
+                <li><a href="#slider3">Genres</a></li>
+                <li id="registerBtn">Register</li>
+                <li id="signinBtn">Signin</li>
+            </ul>
+            <div class="copyright">
+                <p>@2023 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- //POPUP LOGIN-->
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="signUp-Register-Group">
+                <button class="signUp">SIGNUP</button>
+                <button class="login">LOGIN</button>
+            </div>
+            <div>
+
+                <form action="/" method="post">
+                    <div class="containerSIGN">
+                        <input id="username" class="username" type="text" placeholder="Enter Username" name="uname"
+                            required>
+                        <input id="password" class="password" type="password" placeholder="Enter Password" name="psw"
+                            required>
+                        <button id="submit" class="submit" type="submit">Login</button>
+                        <label for="remember">
+                            <input class="check" type="checkbox" checked="checked" name="remember">Remember me
+                        </label>
+                        <h2><a href="/"> I forgot my password</a></h2>
+                        <h2> Not a member yer ? <span><a href="signUp">Sign up</a></span></h2>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/e54148ef25.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+   <script src="popUpSigIn.js"></script>
+    <script src="popUpRegister.js"  ></script>
+    <script src="main.js"></script>
+
+
+
+</body>
+
+</html>

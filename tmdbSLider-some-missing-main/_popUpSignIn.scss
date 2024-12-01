@@ -1,0 +1,144 @@
+/* Modal Content */
+//________________________________________________________________________________
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 1000;
+  padding: 60px;
+  a {
+    text-decoration: none;
+    color: #730000;
+  }
+}
+
+.containerSIGN {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1000;
+}
+
+.signUp {
+  z-index: 1000;
+  text-align: center;
+  width: 146px;
+  height: 54px;
+  border-radius: 0px 8px 8px 0px;
+  border-radius: 8px 0px 0px 0px;
+  background-color: #000;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.78px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.login {
+  width: 146px;
+  height: 54px;
+  border-radius: 0px 8px 8px 0px;
+  border-radius: 8px 0px 0px 0px;
+  background-color: #cc0000;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.78px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  z-index: 1000;
+}
+
+.signUp-Register-Group {
+  text-align: center;
+  font-family: Inria Sans;
+  font-size: 24px;
+  font-weight: 700;
+  // line-height: 28.78px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.check {
+  color: #aaaaaa;
+  z-index: 1000;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.username,
+.password,
+.submit {
+  width: 288px;
+  height: 44px;
+  border-radius: 8px 0px 0px 0px;
+}
+
+.submit {
+  background-color: #cc0000;
+  width: 288px;
+  height: 47px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.98px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: center;
+}
