@@ -1,7 +1,7 @@
 <img width="919" alt="image" src="https://github.com/user-attachments/assets/47d6ce3a-f4c3-45f0-9a62-ef2ff968803b" />
 
 
-[live Demo] (https://ocean2024d.github.io/tmdbSLider1/°
+[live Demo] (https://ocean2024d.github.io/tmdbSLider1/)
 
 # Movie App Using TMDB API
 
